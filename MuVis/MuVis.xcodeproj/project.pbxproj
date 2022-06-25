@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A301F23D27F38122003BA424 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A301F23C27F38122003BA424 /* README.md */; };
+		A301F23E27F38122003BA424 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A301F23C27F38122003BA424 /* README.md */; };
+		A314EA612773BE6F00FD08FD /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A314EA602773BE6F00FD08FD /* AudioManager.swift */; };
+		A314EA622773BE6F00FD08FD /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A314EA602773BE6F00FD08FD /* AudioManager.swift */; };
+		A32920F22780E6690068BE6D /* Waterfall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32920F12780E6690068BE6D /* Waterfall.swift */; };
+		A32920F32780E6690068BE6D /* Waterfall.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32920F12780E6690068BE6D /* Waterfall.swift */; };
+		A32920F5278211F00068BE6D /* OctaveAlignedSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32920F4278211F00068BE6D /* OctaveAlignedSpectrum.swift */; };
+		A32920F6278211F00068BE6D /* OctaveAlignedSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32920F4278211F00068BE6D /* OctaveAlignedSpectrum.swift */; };
+		A340DA892734306C007D6ACD /* MusicSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A340DA882734306C007D6ACD /* MusicSpectrum.swift */; };
+		A340DA8A2734306C007D6ACD /* MusicSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A340DA882734306C007D6ACD /* MusicSpectrum.swift */; };
+		A355297D27331073000CA274 /* OctaveAlignedSpectrum_both.swift in Sources */ = {isa = PBXBuildFile; fileRef = A355297C27331073000CA274 /* OctaveAlignedSpectrum_both.swift */; };
+		A355297E27331073000CA274 /* OctaveAlignedSpectrum_both.swift in Sources */ = {isa = PBXBuildFile; fileRef = A355297C27331073000CA274 /* OctaveAlignedSpectrum_both.swift */; };
+		A3552983273358A7000CA274 /* EllipticalOAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3552982273358A6000CA274 /* EllipticalOAS.swift */; };
+		A3552984273358A7000CA274 /* EllipticalOAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3552982273358A6000CA274 /* EllipticalOAS.swift */; };
+		A358CEAD27A5C4670072E7EC /* Spectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A358CEAC27A5C4670072E7EC /* Spectrum.swift */; };
+		A358CEAE27A5C4670072E7EC /* Spectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A358CEAC27A5C4670072E7EC /* Spectrum.swift */; };
+		A367093D26E6B05500FC295D /* Documentation in Resources */ = {isa = PBXBuildFile; fileRef = A367093C26E6B05500FC295D /* Documentation */; };
+		A367093E26E6B05500FC295D /* Documentation in Resources */ = {isa = PBXBuildFile; fileRef = A367093C26E6B05500FC295D /* Documentation */; };
+		A36774F1274313BE002E4513 /* SpectrumBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36774F0274313BE002E4513 /* SpectrumBars.swift */; };
+		A36774F2274313BE002E4513 /* SpectrumBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36774F0274313BE002E4513 /* SpectrumBars.swift */; };
+		A37A0540278398C5007E372A /* DownTheRabbitHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37A053F278398C5007E372A /* DownTheRabbitHole.swift */; };
+		A37A0541278398C5007E372A /* DownTheRabbitHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37A053F278398C5007E372A /* DownTheRabbitHole.swift */; };
+		A38DEF5726DAC22C00C537C8 /* MuVisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEF4426DAC22B00C537C8 /* MuVisApp.swift */; };
+		A38DEF5826DAC22C00C537C8 /* MuVisApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEF4426DAC22B00C537C8 /* MuVisApp.swift */; };
+		A38DEF5926DAC22C00C537C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEF4526DAC22B00C537C8 /* ContentView.swift */; };
+		A38DEF5A26DAC22C00C537C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEF4526DAC22B00C537C8 /* ContentView.swift */; };
+		A38DEF7126DAC5A300C537C8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38DEF6826DAC5A300C537C8 /* Colors.xcassets */; };
+		A38DEF7226DAC5A300C537C8 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38DEF6826DAC5A300C537C8 /* Colors.xcassets */; };
+		A38DEF7526DAC5A300C537C8 /* SpectralEnhancer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEF6A26DAC5A300C537C8 /* SpectralEnhancer.swift */; };
+		A38DEF7626DAC5A300C537C8 /* SpectralEnhancer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEF6A26DAC5A300C537C8 /* SpectralEnhancer.swift */; };
+		A38DEF7E26DAC72C00C537C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38DEF7D26DAC72C00C537C8 /* Assets.xcassets */; };
+		A38DEF7F26DAC72C00C537C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38DEF7D26DAC72C00C537C8 /* Assets.xcassets */; };
+		A38DEF8426DAC81A00C537C8 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A38DEF8326DAC81A00C537C8 /* music.mp3 */; };
+		A38DEF8526DAC81A00C537C8 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A38DEF8326DAC81A00C537C8 /* music.mp3 */; };
+		A38DEF8726DAC8C800C537C8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEF8626DAC8C800C537C8 /* Settings.swift */; };
+		A38DEF8826DAC8C800C537C8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEF8626DAC8C800C537C8 /* Settings.swift */; };
+		A38DEFE526DADB2700C537C8 /* SpinningEllipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFCF26DADB2600C537C8 /* SpinningEllipse.swift */; };
+		A38DEFE626DADB2700C537C8 /* SpinningEllipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFCF26DADB2600C537C8 /* SpinningEllipse.swift */; };
+		A38DEFE926DADB2700C537C8 /* TriOctSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFD126DADB2600C537C8 /* TriOctSpectrum.swift */; };
+		A38DEFEA26DADB2700C537C8 /* TriOctSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFD126DADB2600C537C8 /* TriOctSpectrum.swift */; };
+		A38DEFED26DADB2700C537C8 /* HarmonicAlignment2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFD326DADB2600C537C8 /* HarmonicAlignment2.swift */; };
+		A38DEFEE26DADB2700C537C8 /* HarmonicAlignment2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFD326DADB2600C537C8 /* HarmonicAlignment2.swift */; };
+		A38DEFFB26DADB2700C537C8 /* Harmonograph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFDA26DADB2700C537C8 /* Harmonograph.swift */; };
+		A38DEFFC26DADB2700C537C8 /* Harmonograph.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFDA26DADB2700C537C8 /* Harmonograph.swift */; };
+		A38DEFFD26DADB2700C537C8 /* RainbowOAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFDB26DADB2700C537C8 /* RainbowOAS.swift */; };
+		A38DEFFE26DADB2700C537C8 /* RainbowOAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFDB26DADB2700C537C8 /* RainbowOAS.swift */; };
+		A38DF00126DADB2700C537C8 /* RainbowSpectrum2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFDD26DADB2700C537C8 /* RainbowSpectrum2.swift */; };
+		A38DF00226DADB2700C537C8 /* RainbowSpectrum2.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFDD26DADB2700C537C8 /* RainbowSpectrum2.swift */; };
+		A38DF00326DADB2700C537C8 /* RainbowEllipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFDE26DADB2700C537C8 /* RainbowEllipse.swift */; };
+		A38DF00426DADB2700C537C8 /* RainbowEllipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFDE26DADB2700C537C8 /* RainbowEllipse.swift */; };
+		A38DF00926DADB2700C537C8 /* Cymbal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFE126DADB2700C537C8 /* Cymbal.swift */; };
+		A38DF00A26DADB2700C537C8 /* Cymbal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFE126DADB2700C537C8 /* Cymbal.swift */; };
+		A38DF00F26DADB2700C537C8 /* HarmonicAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFE426DADB2700C537C8 /* HarmonicAlignment.swift */; };
+		A38DF01026DADB2700C537C8 /* HarmonicAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DEFE426DADB2700C537C8 /* HarmonicAlignment.swift */; };
+		A39069562771179B001AEAB2 /* LinearOAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39069552771179B001AEAB2 /* LinearOAS.swift */; };
+		A39069572771179B001AEAB2 /* LinearOAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39069552771179B001AEAB2 /* LinearOAS.swift */; };
+		A3B31BC127277D6D009D2557 /* VisUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B31BC027277D6D009D2557 /* VisUtilities.swift */; };
+		A3B31BC227277D6D009D2557 /* VisUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B31BC027277D6D009D2557 /* VisUtilities.swift */; };
+		A3CAB6192784CC4700C30203 /* TriOctMuSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CAB6182784CC4700C30203 /* TriOctMuSpectrum.swift */; };
+		A3CAB61A2784CC4700C30203 /* TriOctMuSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CAB6182784CC4700C30203 /* TriOctMuSpectrum.swift */; };
+		A3CAB61C2784DB3400C30203 /* RainbowSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CAB61B2784DB3400C30203 /* RainbowSpectrum.swift */; };
+		A3CAB61D2784DB3400C30203 /* RainbowSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CAB61B2784DB3400C30203 /* RainbowSpectrum.swift */; };
+		A3D9BEEC27790D0C0082621F /* MuSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D9BEEB27790D0C0082621F /* MuSpectrum.swift */; };
+		A3D9BEED27790D0C0082621F /* MuSpectrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D9BEEB27790D0C0082621F /* MuSpectrum.swift */; };
+		A3E958E3277A78C9004A1D99 /* OverlappedOctaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E958E2277A78C9004A1D99 /* OverlappedOctaves.swift */; };
+		A3E958E4277A78C9004A1D99 /* OverlappedOctaves.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E958E2277A78C9004A1D99 /* OverlappedOctaves.swift */; };
+		A3E958E6277A9BC2004A1D99 /* OverlappedHarmonics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E958E5277A9BC2004A1D99 /* OverlappedHarmonics.swift */; };
+		A3E958E7277A9BC2004A1D99 /* OverlappedHarmonics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E958E5277A9BC2004A1D99 /* OverlappedHarmonics.swift */; };
+		A3EA3F5327516ACF0081C5D6 /* OutOfTheRabbitHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA3F5227516ACE0081C5D6 /* OutOfTheRabbitHole.swift */; };
+		A3EA3F5427516ACF0081C5D6 /* OutOfTheRabbitHole.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA3F5227516ACE0081C5D6 /* OutOfTheRabbitHole.swift */; };
+		A3F559192735DD7B003C680C /* SpiralOAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F559182735DD7B003C680C /* SpiralOAS.swift */; };
+		A3F5591A2735DD7B003C680C /* SpiralOAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F559182735DD7B003C680C /* SpiralOAS.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A301F23C27F38122003BA424 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A314EA602773BE6F00FD08FD /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		A32920F12780E6690068BE6D /* Waterfall.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Waterfall.swift; sourceTree = "<group>"; };
+		A32920F4278211F00068BE6D /* OctaveAlignedSpectrum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctaveAlignedSpectrum.swift; sourceTree = "<group>"; };
+		A340DA882734306C007D6ACD /* MusicSpectrum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicSpectrum.swift; sourceTree = "<group>"; };
+		A355297C27331073000CA274 /* OctaveAlignedSpectrum_both.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OctaveAlignedSpectrum_both.swift; sourceTree = "<group>"; };
+		A3552982273358A6000CA274 /* EllipticalOAS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EllipticalOAS.swift; sourceTree = "<group>"; };
+		A358CEAC27A5C4670072E7EC /* Spectrum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spectrum.swift; sourceTree = "<group>"; };
+		A367093C26E6B05500FC295D /* Documentation */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Documentation; sourceTree = "<group>"; };
+		A36774F0274313BE002E4513 /* SpectrumBars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpectrumBars.swift; sourceTree = "<group>"; };
+		A37A053F278398C5007E372A /* DownTheRabbitHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DownTheRabbitHole.swift; sourceTree = "<group>"; };
+		A38DEF4426DAC22B00C537C8 /* MuVisApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuVisApp.swift; sourceTree = "<group>"; };
+		A38DEF4526DAC22B00C537C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A38DEF4B26DAC22C00C537C8 /* MuVis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuVis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38DEF4E26DAC22C00C537C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A38DEF5326DAC22C00C537C8 /* MuVis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuVis.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38DEF5526DAC22C00C537C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A38DEF5626DAC22C00C537C8 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		A38DEF6826DAC5A300C537C8 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		A38DEF6A26DAC5A300C537C8 /* SpectralEnhancer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpectralEnhancer.swift; sourceTree = "<group>"; };
+		A38DEF7D26DAC72C00C537C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A38DEF8326DAC81A00C537C8 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		A38DEF8626DAC8C800C537C8 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		A38DEFCF26DADB2600C537C8 /* SpinningEllipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinningEllipse.swift; sourceTree = "<group>"; };
+		A38DEFD126DADB2600C537C8 /* TriOctSpectrum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriOctSpectrum.swift; sourceTree = "<group>"; };
+		A38DEFD326DADB2600C537C8 /* HarmonicAlignment2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HarmonicAlignment2.swift; sourceTree = "<group>"; };
+		A38DEFDA26DADB2700C537C8 /* Harmonograph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Harmonograph.swift; sourceTree = "<group>"; };
+		A38DEFDB26DADB2700C537C8 /* RainbowOAS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowOAS.swift; sourceTree = "<group>"; };
+		A38DEFDD26DADB2700C537C8 /* RainbowSpectrum2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowSpectrum2.swift; sourceTree = "<group>"; };
+		A38DEFDE26DADB2700C537C8 /* RainbowEllipse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowEllipse.swift; sourceTree = "<group>"; };
+		A38DEFE126DADB2700C537C8 /* Cymbal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cymbal.swift; sourceTree = "<group>"; };
+		A38DEFE426DADB2700C537C8 /* HarmonicAlignment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HarmonicAlignment.swift; sourceTree = "<group>"; };
+		A39069552771179B001AEAB2 /* LinearOAS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearOAS.swift; sourceTree = "<group>"; };
+		A3B31BC027277D6D009D2557 /* VisUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisUtilities.swift; sourceTree = "<group>"; };
+		A3CAB6182784CC4700C30203 /* TriOctMuSpectrum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriOctMuSpectrum.swift; sourceTree = "<group>"; };
+		A3CAB61B2784DB3400C30203 /* RainbowSpectrum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RainbowSpectrum.swift; sourceTree = "<group>"; };
+		A3D9BEEB27790D0C0082621F /* MuSpectrum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuSpectrum.swift; sourceTree = "<group>"; };
+		A3E958E2277A78C9004A1D99 /* OverlappedOctaves.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlappedOctaves.swift; sourceTree = "<group>"; };
+		A3E958E5277A9BC2004A1D99 /* OverlappedHarmonics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlappedHarmonics.swift; sourceTree = "<group>"; };
+		A3EA3F5227516ACE0081C5D6 /* OutOfTheRabbitHole.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OutOfTheRabbitHole.swift; sourceTree = "<group>"; };
+		A3F559182735DD7B003C680C /* SpiralOAS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiralOAS.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A38DEF4826DAC22C00C537C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38DEF5026DAC22C00C537C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A38DEF3E26DAC22B00C537C8 = {
+			isa = PBXGroup;
+			children = (
+				A301F23C27F38122003BA424 /* README.md */,
+				A367093C26E6B05500FC295D /* Documentation */,
+				A38DEF8326DAC81A00C537C8 /* music.mp3 */,
+				A38DEF4326DAC22B00C537C8 /* Shared */,
+				A38DEF4D26DAC22C00C537C8 /* iOS */,
+				A38DEF5426DAC22C00C537C8 /* macOS */,
+				A38DEF4C26DAC22C00C537C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A38DEF4326DAC22B00C537C8 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A38DEF4426DAC22B00C537C8 /* MuVisApp.swift */,
+				A38DEF4526DAC22B00C537C8 /* ContentView.swift */,
+				A38DEF8626DAC8C800C537C8 /* Settings.swift */,
+				A314EA602773BE6F00FD08FD /* AudioManager.swift */,
+				A38DEF6A26DAC5A300C537C8 /* SpectralEnhancer.swift */,
+				A38DF01126DADBCC00C537C8 /* Visualizations */,
+				A38DEF7D26DAC72C00C537C8 /* Assets.xcassets */,
+				A38DEF6826DAC5A300C537C8 /* Colors.xcassets */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A38DEF4C26DAC22C00C537C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A38DEF4B26DAC22C00C537C8 /* MuVis.app */,
+				A38DEF5326DAC22C00C537C8 /* MuVis.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A38DEF4D26DAC22C00C537C8 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				A38DEF4E26DAC22C00C537C8 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		A38DEF5426DAC22C00C537C8 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				A38DEF5526DAC22C00C537C8 /* Info.plist */,
+				A38DEF5626DAC22C00C537C8 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		A38DF01126DADBCC00C537C8 /* Visualizations */ = {
+			isa = PBXGroup;
+			children = (
+				A358CEAC27A5C4670072E7EC /* Spectrum.swift */,
+				A340DA882734306C007D6ACD /* MusicSpectrum.swift */,
+				A3D9BEEB27790D0C0082621F /* MuSpectrum.swift */,
+				A36774F0274313BE002E4513 /* SpectrumBars.swift */,
+				A39069552771179B001AEAB2 /* LinearOAS.swift */,
+				A3E958E2277A78C9004A1D99 /* OverlappedOctaves.swift */,
+				A32920F4278211F00068BE6D /* OctaveAlignedSpectrum.swift */,
+				A355297C27331073000CA274 /* OctaveAlignedSpectrum_both.swift */,
+				A3552982273358A6000CA274 /* EllipticalOAS.swift */,
+				A3F559182735DD7B003C680C /* SpiralOAS.swift */,
+				A38DEFE426DADB2700C537C8 /* HarmonicAlignment.swift */,
+				A38DEFD326DADB2600C537C8 /* HarmonicAlignment2.swift */,
+				A38DEFD126DADB2600C537C8 /* TriOctSpectrum.swift */,
+				A3CAB6182784CC4700C30203 /* TriOctMuSpectrum.swift */,
+				A3E958E5277A9BC2004A1D99 /* OverlappedHarmonics.swift */,
+				A38DEFDA26DADB2700C537C8 /* Harmonograph.swift */,
+				A38DEFE126DADB2700C537C8 /* Cymbal.swift */,
+				A3CAB61B2784DB3400C30203 /* RainbowSpectrum.swift */,
+				A38DEFDD26DADB2700C537C8 /* RainbowSpectrum2.swift */,
+				A32920F12780E6690068BE6D /* Waterfall.swift */,
+				A38DEFDB26DADB2700C537C8 /* RainbowOAS.swift */,
+				A38DEFDE26DADB2700C537C8 /* RainbowEllipse.swift */,
+				A38DEFCF26DADB2600C537C8 /* SpinningEllipse.swift */,
+				A3EA3F5227516ACE0081C5D6 /* OutOfTheRabbitHole.swift */,
+				A37A053F278398C5007E372A /* DownTheRabbitHole.swift */,
+				A3B31BC027277D6D009D2557 /* VisUtilities.swift */,
+			);
+			path = Visualizations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A38DEF4A26DAC22C00C537C8 /* MuVis (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38DEF5F26DAC22C00C537C8 /* Build configuration list for PBXNativeTarget "MuVis (iOS)" */;
+			buildPhases = (
+				A38DEF4726DAC22C00C537C8 /* Sources */,
+				A38DEF4826DAC22C00C537C8 /* Frameworks */,
+				A38DEF4926DAC22C00C537C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MuVis (iOS)";
+			productName = "MuVis (iOS)";
+			productReference = A38DEF4B26DAC22C00C537C8 /* MuVis.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A38DEF5226DAC22C00C537C8 /* MuVis (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38DEF6226DAC22C00C537C8 /* Build configuration list for PBXNativeTarget "MuVis (macOS)" */;
+			buildPhases = (
+				A38DEF4F26DAC22C00C537C8 /* Sources */,
+				A38DEF5026DAC22C00C537C8 /* Frameworks */,
+				A38DEF5126DAC22C00C537C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MuVis (macOS)";
+			productName = "MuVis (macOS)";
+			productReference = A38DEF5326DAC22C00C537C8 /* MuVis.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A38DEF3F26DAC22B00C537C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					A38DEF4A26DAC22C00C537C8 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					A38DEF5226DAC22C00C537C8 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = A38DEF4226DAC22B00C537C8 /* Build configuration list for PBXProject "MuVis" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A38DEF3E26DAC22B00C537C8;
+			productRefGroup = A38DEF4C26DAC22C00C537C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A38DEF4A26DAC22C00C537C8 /* MuVis (iOS) */,
+				A38DEF5226DAC22C00C537C8 /* MuVis (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A38DEF4926DAC22C00C537C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38DEF7126DAC5A300C537C8 /* Colors.xcassets in Resources */,
+				A38DEF8426DAC81A00C537C8 /* music.mp3 in Resources */,
+				A301F23D27F38122003BA424 /* README.md in Resources */,
+				A367093D26E6B05500FC295D /* Documentation in Resources */,
+				A38DEF7E26DAC72C00C537C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38DEF5126DAC22C00C537C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38DEF7226DAC5A300C537C8 /* Colors.xcassets in Resources */,
+				A38DEF8526DAC81A00C537C8 /* music.mp3 in Resources */,
+				A301F23E27F38122003BA424 /* README.md in Resources */,
+				A367093E26E6B05500FC295D /* Documentation in Resources */,
+				A38DEF7F26DAC72C00C537C8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A38DEF4726DAC22C00C537C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38DEFE926DADB2700C537C8 /* TriOctSpectrum.swift in Sources */,
+				A38DEFFB26DADB2700C537C8 /* Harmonograph.swift in Sources */,
+				A38DF00926DADB2700C537C8 /* Cymbal.swift in Sources */,
+				A38DEF8726DAC8C800C537C8 /* Settings.swift in Sources */,
+				A340DA892734306C007D6ACD /* MusicSpectrum.swift in Sources */,
+				A3D9BEEC27790D0C0082621F /* MuSpectrum.swift in Sources */,
+				A3EA3F5327516ACF0081C5D6 /* OutOfTheRabbitHole.swift in Sources */,
+				A3CAB61C2784DB3400C30203 /* RainbowSpectrum.swift in Sources */,
+				A3B31BC127277D6D009D2557 /* VisUtilities.swift in Sources */,
+				A38DF00F26DADB2700C537C8 /* HarmonicAlignment.swift in Sources */,
+				A38DF00326DADB2700C537C8 /* RainbowEllipse.swift in Sources */,
+				A38DEF5926DAC22C00C537C8 /* ContentView.swift in Sources */,
+				A38DEFFD26DADB2700C537C8 /* RainbowOAS.swift in Sources */,
+				A358CEAD27A5C4670072E7EC /* Spectrum.swift in Sources */,
+				A3CAB6192784CC4700C30203 /* TriOctMuSpectrum.swift in Sources */,
+				A3F559192735DD7B003C680C /* SpiralOAS.swift in Sources */,
+				A38DEFE526DADB2700C537C8 /* SpinningEllipse.swift in Sources */,
+				A3E958E3277A78C9004A1D99 /* OverlappedOctaves.swift in Sources */,
+				A314EA612773BE6F00FD08FD /* AudioManager.swift in Sources */,
+				A3E958E6277A9BC2004A1D99 /* OverlappedHarmonics.swift in Sources */,
+				A39069562771179B001AEAB2 /* LinearOAS.swift in Sources */,
+				A37A0540278398C5007E372A /* DownTheRabbitHole.swift in Sources */,
+				A38DEF5726DAC22C00C537C8 /* MuVisApp.swift in Sources */,
+				A3552983273358A7000CA274 /* EllipticalOAS.swift in Sources */,
+				A32920F5278211F00068BE6D /* OctaveAlignedSpectrum.swift in Sources */,
+				A36774F1274313BE002E4513 /* SpectrumBars.swift in Sources */,
+				A38DEF7526DAC5A300C537C8 /* SpectralEnhancer.swift in Sources */,
+				A355297D27331073000CA274 /* OctaveAlignedSpectrum_both.swift in Sources */,
+				A38DEFED26DADB2700C537C8 /* HarmonicAlignment2.swift in Sources */,
+				A38DF00126DADB2700C537C8 /* RainbowSpectrum2.swift in Sources */,
+				A32920F22780E6690068BE6D /* Waterfall.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A38DEF4F26DAC22C00C537C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A38DEFEA26DADB2700C537C8 /* TriOctSpectrum.swift in Sources */,
+				A38DEFFC26DADB2700C537C8 /* Harmonograph.swift in Sources */,
+				A38DF00A26DADB2700C537C8 /* Cymbal.swift in Sources */,
+				A38DEF8826DAC8C800C537C8 /* Settings.swift in Sources */,
+				A340DA8A2734306C007D6ACD /* MusicSpectrum.swift in Sources */,
+				A3D9BEED27790D0C0082621F /* MuSpectrum.swift in Sources */,
+				A3EA3F5427516ACF0081C5D6 /* OutOfTheRabbitHole.swift in Sources */,
+				A3CAB61D2784DB3400C30203 /* RainbowSpectrum.swift in Sources */,
+				A3B31BC227277D6D009D2557 /* VisUtilities.swift in Sources */,
+				A38DF01026DADB2700C537C8 /* HarmonicAlignment.swift in Sources */,
+				A38DF00426DADB2700C537C8 /* RainbowEllipse.swift in Sources */,
+				A38DEF5A26DAC22C00C537C8 /* ContentView.swift in Sources */,
+				A38DEFFE26DADB2700C537C8 /* RainbowOAS.swift in Sources */,
+				A358CEAE27A5C4670072E7EC /* Spectrum.swift in Sources */,
+				A3CAB61A2784CC4700C30203 /* TriOctMuSpectrum.swift in Sources */,
+				A3F5591A2735DD7B003C680C /* SpiralOAS.swift in Sources */,
+				A38DEFE626DADB2700C537C8 /* SpinningEllipse.swift in Sources */,
+				A3E958E4277A78C9004A1D99 /* OverlappedOctaves.swift in Sources */,
+				A314EA622773BE6F00FD08FD /* AudioManager.swift in Sources */,
+				A3E958E7277A9BC2004A1D99 /* OverlappedHarmonics.swift in Sources */,
+				A39069572771179B001AEAB2 /* LinearOAS.swift in Sources */,
+				A37A0541278398C5007E372A /* DownTheRabbitHole.swift in Sources */,
+				A38DEF5826DAC22C00C537C8 /* MuVisApp.swift in Sources */,
+				A3552984273358A7000CA274 /* EllipticalOAS.swift in Sources */,
+				A32920F6278211F00068BE6D /* OctaveAlignedSpectrum.swift in Sources */,
+				A36774F2274313BE002E4513 /* SpectrumBars.swift in Sources */,
+				A38DEF7626DAC5A300C537C8 /* SpectralEnhancer.swift in Sources */,
+				A355297E27331073000CA274 /* OctaveAlignedSpectrum_both.swift in Sources */,
+				A38DEFEE26DADB2700C537C8 /* HarmonicAlignment2.swift in Sources */,
+				A38DF00226DADB2700C537C8 /* RainbowSpectrum2.swift in Sources */,
+				A32920F32780E6690068BE6D /* Waterfall.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A38DEF5D26DAC22C00C537C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A38DEF5E26DAC22C00C537C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A38DEF6026DAC22C00C537C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = GZ962756J3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = GZ962756J3.com.me.kbromley.MuVis;
+				PRODUCT_NAME = MuVis;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A38DEF6126DAC22C00C537C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = GZ962756J3;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = GZ962756J3.com.me.kbromley.MuVis;
+				PRODUCT_NAME = MuVis;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A38DEF6326DAC22C00C537C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = GZ962756J3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = GZ962756J3.com.me.kbromley.MuVis;
+				PRODUCT_NAME = MuVis;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A38DEF6426DAC22C00C537C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 8;
+				DEVELOPMENT_TEAM = GZ962756J3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0.3;
+				PRODUCT_BUNDLE_IDENTIFIER = GZ962756J3.com.me.kbromley.MuVis;
+				PRODUCT_NAME = MuVis;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A38DEF4226DAC22B00C537C8 /* Build configuration list for PBXProject "MuVis" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38DEF5D26DAC22C00C537C8 /* Debug */,
+				A38DEF5E26DAC22C00C537C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38DEF5F26DAC22C00C537C8 /* Build configuration list for PBXNativeTarget "MuVis (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38DEF6026DAC22C00C537C8 /* Debug */,
+				A38DEF6126DAC22C00C537C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38DEF6226DAC22C00C537C8 /* Build configuration list for PBXNativeTarget "MuVis (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38DEF6326DAC22C00C537C8 /* Debug */,
+				A38DEF6426DAC22C00C537C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A38DEF3F26DAC22B00C537C8 /* Project object */;
+}

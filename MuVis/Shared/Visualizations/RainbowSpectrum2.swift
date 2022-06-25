@@ -1,0 +1,130 @@
+/// RainbowSpectrum2.swift
+/// MuVis
+///
+/// The RainbowSpectrum2 visualization is identical to the RainbowSpectrum visualization - except that:
+/// 1. The spectral histories in the lower and upper half-screens move dynamically up-and-down.
+/// 2. The lower half-screen is colored red, and upper half-screen is colored blue.
+///
+/// As in the RainblowSpectrum visualization,  If the optionOn button is selected, then a color gradient is applied to the muSpectrum such that the notes within
+/// an octave are colored similarly to the standard "hue" color cycle.
+///
+/// Created by Keith Bromley on 16 Dec 2020.  Significantly updated on 1 Nov 2021.
+
+
+import SwiftUI
+
+
+struct RainbowSpectrum2: View {
+    @EnvironmentObject var audioManager: AudioManager  // Observe the instance of AudioManager passed from ContentView
+    @EnvironmentObject var settings: Settings
+    
+    var body: some View {
+        
+        // Toggle between black and white as the Canvas's background color:
+        let backgroundColor: Color = (settings.selectedColorScheme == .dark) ? Color.black : Color.white
+        
+        Canvas { context, size in
+
+            let width: Double  = size.width
+            let height: Double = size.height
+            let halfHeight: Double = height * 0.5
+            let quarterHeight: Double = height * 0.25
+            
+            var x : Double = 0.0       // The drawing origin is in the upper left corner.
+            var y : Double = 0.0       // The drawing origin is in the upper left corner.
+
+            let lineCount: Int = 48     // lineCount must be <= historyCount
+            let octavesPerLine: Int = 3
+            let pointsPerLine: Int = pointsPerNote * notesPerOctave * octavesPerLine  // pointsPerLine = 12 * 12 * 3 = 432
+            var lineRampUp: Double = 0.0
+            var lineRampDown: Double = 0.0
+            
+            let now = Date()
+            let time = now.timeIntervalSinceReferenceDate
+            let frequency: Double = 0.1  // 1 cycle per 10 seconds
+            
+            
+//---------------------------------------------------------------------------------------------------------------------
+            
+            for lineNum in 0 ..< lineCount {       //  0 <= lineNum < 48
+            
+                let lineOffset: Int = (lineCount-1 - lineNum) * sixOctPointCount  // lineNum = 0 is the oldest spectrum
+                
+                // As lineNum goes from 0 to lineCount, lineRampUp goes from 0.0 to 1.0:
+                lineRampUp = Double(lineNum) / Double(lineCount)
+
+                // As lineNum goes from 0 to lineCount, lineRampDown goes from 1.0 to 0.0:
+                lineRampDown =  Double(lineCount - lineNum ) / Double(lineCount)
+                
+                // Each spectrum is rendered along a horizontal line extending from startX to endX.
+                let startX: Double = 0.0   + lineRampUp * (0.33 * width)
+                let endX: Double   = width - lineRampUp * (0.33 * width)
+                let spectrumWidth: Double = endX - startX
+                let pointWidth: Double = spectrumWidth / Double(pointsPerLine)  // pointsPerRow = 12 * 12 * 3 = 432
+
+                let vertOffset = cos(2.0 * Double.pi * frequency * time )  // vertOffset oscillates between -1 and +1.
+                let valY = lineRampDown * (quarterHeight - ( quarterHeight * vertOffset) ) + (lineRampUp * halfHeight)
+                
+                // Render the lower and upper triOct spectra:
+                for triOct in 0 ..< 2 {		// triOct = 0, 1 denote lower and upper half-panes
+                    
+                    let startY: Double = (triOct == 0) ? height - valY : valY
+                    let endY: Double = startY
+                    
+                    var path = Path()
+                    path.move( to: CGPoint( x: startX, y:  startY ) )
+
+                    // We will render a total of sixOctPointCount points where sixOctPointCount = 72 * 12 = 864
+                    // The lower triOct spectrum and the upper triOct spectrum each contain 432 points.
+                
+                    for point in 0 ..< pointsPerLine{     // 0 <= point < 432
+                        
+                        x = startX + ( Double(point) * pointWidth )
+                        x = min(max(startX, x), endX);
+                        
+                        let tempIndex = (triOct == 0) ? lineOffset + point : (pointsPerLine + lineOffset + point)
+                        let mag: Double = 0.5 * Double(audioManager.muSpecHistory[tempIndex])
+                        let magY = valY + ( mag * lineRampDown * quarterHeight )
+                        y = (triOct == 0) ? height - magY : magY
+                        path.addLine(to: CGPoint(x: x, y: y))
+                            
+                    }
+                    path.addLine( to: CGPoint( x: endX, y: endY ) )
+                    
+                    if(settings.optionOn) {
+                        context.stroke( path,
+                                        with: .linearGradient( settings.hueGradient,
+                                                               startPoint: CGPoint(x: startX, y: startY),
+                                                               endPoint: CGPoint(x: endX, y: endY)),
+                                        lineWidth: 0.3 + lineRampDown * 3.0 )
+                    }
+                    else {
+                        context.stroke( path,
+                                        with: .color( (triOct==0) ? Color.red : Color.blue),
+                                        // Vary the line thickness to enhance the three-dimensional effect:
+                                        lineWidth: 0.3 + (lineRampDown*3.0) )
+                    }
+
+                }  // end of for() loop over triOct
+            }  // end of for() loop over lineNum
+
+
+            // Print on-screen the elapsed duration-per-frame (in milliseconds) (typically about 50)
+            if(showMSPF == true) {
+                context.draw(Text("MSPF: \( settings.monitorPerformance() )"), at: CGPoint(x: 0.04*width, y: 0.5*height) )
+            }
+
+
+        }  // end of Canvas{}
+        .background(backgroundColor)  // Toggle between black and white background color.
+        
+    }  //end of var body: some View{}
+}  // end of RainbowSpectrum{} struct
+
+
+
+struct RainbowSpectrum2_Previews: PreviewProvider {
+    static var previews: some View {
+        RainbowSpectrum2()
+    }
+}
