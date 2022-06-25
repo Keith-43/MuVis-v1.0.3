@@ -2,7 +2,7 @@
 
 MuVis is an open-source multi-platform app (using SwiftUI, Swift, and Xcode) for music visualization. It renders informative (and musically useful) graphical displays in real time from music files being played - or from the device's microphone. Further details are provided in the project's User Guide and Visualizations Guide documents.
 
-This app runs on macOS, iOS, and iPadOS devices. The latest release con be downloaded from the Apple App Store [(here)].  And the source code can be downloaded [(here)].
+This app runs on macOS, iOS, and iPadOS devices. The latest release con be downloaded from the Apple App Store at apps.apple.com/us/app/muvis-music-visualizer/id1582324352 .  And the source code can be downloaded at github.com/Keith-43 .
 
 Real-time music visualization is an exciting endeavor - providing the user with dynamic visual and aural stimulation and edification. I am hoping that others will benefit from my research - and perhaps build upon what I have started. I will strive to continuously improve this app as time allows. Feel free to contact me if you wish to contribute or collaborate. (I am new to Swift programming, so I would appreciate any help from experienced-others who can improve my code.)
 
