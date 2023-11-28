@@ -146,6 +146,12 @@ class AudioManager: ObservableObject {
                 else {
                     try session.setCategory(AVAudioSession.Category.playAndRecord, mode: AVAudioSession.Mode.default, options: [])
                 }
+                do {
+                    try session.setActive(true, options: .notifyOthersOnDeactivation)
+                }
+                catch  {
+                    print("ERROR: Failed to set audio record session active")
+                }
             } catch { print("Failed to set audioSession category.") }
         #endif
         
