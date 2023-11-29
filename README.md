@@ -1,3 +1,7 @@
+## Latest Version
+
+https://github.com/Keith-43/MuVis-v2.1.1
+
 ## **MuVis**
 
 MuVis is an open-source multi-platform app (using SwiftUI, Swift, and Xcode) for music visualization. It renders informative (and musically useful) graphical displays in real time from music files being played - or from the device's microphone. Further details are provided in the project's User Guide and Visualizations Guide documents.
